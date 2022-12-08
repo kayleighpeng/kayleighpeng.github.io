@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>kayleigh.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><h1 class="site-title"><span class="site-name">kayleigh</span>.</h1></a>
+        <nav>
+            <a href="#intro">INTRODUCTION</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="./resume.html">RESUME</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="intro">
+            <img src="./assets/kayleigh.png" alt="Kayleigh Peng"/>
+            <div class="intro-text">
+                <h2 class=""><span>introduction</span>.</h2>
+                <h3>hi, i'm <span>kayleigh</span>.</h3>
+                <p>I'm a senior at Northwestern University studying Computer Science and Design.</p>
+                <p>As a front-end developer, I focus on writing clean and efficient code. As a UI/UX designer, I focus on creating beautiful and friendly user experiences.</p>
+                <p>Outside of class, you can find me (kick)boxing at Title Boxing Club, taking walks on the lakefill, and pretending to be an engineer with Northwestern Formula Racing.</p>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h2><span>projects</span>.</h2>
+            <div class="project-grid">
+                <a class="project-tile" href="./projects/nfr-ergonomics.html">
+                    <h3>NFR22</h3>
+                    <img src="./assets/nfr-logo.png" alt="Northwestern Formula Racing"/>
+                    <p>Ergonomics</p>
+                </a>
+                <a class="project-tile">
+                    <h3>FPDCC</h3>
+                    <img src="./assets/fpdcc-logo.png" alt="Forest Preserve District of Cook County"/>
+                    <p>Entrance System</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2><span>contact</span>.</h2>
+            <div class="contact-contents">
+                <div class="email-form">
+                    <h3>email me</h3>
+                    <form name="contact me" action="" onsubmit="return validateForm()" method="post">
+                        <div class="form-name-input">
+                            <div class="form-text-input">
+                                <label for="first_name">First Name <span aria-label="required">*</span></label>
+                                <input type="text" id="first_name" name="first_name" required/>
+                            </div>
+                            <div class="form-text-input">
+                                <label for="last_name">Last Name <span aria-label="required">*</span></label>
+                                <input type="text" id="last_name" name="last_name" required/>
+                            </div>
+                        </div>
+                        <div class="form-text-input">
+                            <label for="email">Email <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="user_email" required/>
+                        </div>
+                        <div class="form-message">
+                            <label for="msg">Message <span aria-label="required">*</span></label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                        <div>
+                            <input type="checkbox" aria-checked="false" id="subscribe" name="subscribe" value="Subscribe">
+                            <label for="subscribe"> Notify me about new projects</label><br>
+                        </div>
+                        <input type="submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2022 | Kayleigh Peng</p>
+        <div class="footer-contacts">
+            <p>(312) 927-3629</p>
+            <p>kayleighpeng2023@u.northwestern.edu</p>
+        </div>
+    </footer>
+</body>
+
+</html>
